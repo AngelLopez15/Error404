@@ -1,0 +1,169 @@
+body{
+  padding: 0;
+  margin: 0;
+  background: linear-gradient( #09414e, #18181b);
+  background-attachment: fixed;
+  color:#aaa;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.container{
+  position: relative;
+  margin: auto;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container__text{
+  text-align: center;
+  font-size: 2rem;
+  /* padding: 3rem 0 ; */
+}
+
+.container__title{
+  margin: 0;
+}
+
+.container__paragraph{
+  font-size: 2rem;
+  line-height: 3rem;
+  margin: 0;
+}
+
+.container__sgv svg{
+  max-width: 100%;
+  height: 20rem;
+}
+
+.container__sgv{
+  /* animation: move 3s infinite; */
+  animation: move2 3s linear infinite;
+  
+}
+
+.bubble{
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: .3;
+  position: absolute;
+  bottom: -30px;
+  left: 2%;
+  animation: bubble 5s linear infinite;
+}
+
+
+.bubble:nth-child(2){
+  left: 12%;
+  animation: bubble 5s linear infinite;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(3){
+  left: 22%;
+  animation: bubble 5s linear infinite;
+  animation-delay: 3s;
+}
+
+.bubble:nth-child(4){
+  left: 32%;
+  animation: bubble 5s linear infinite;
+  animation-delay: 4s;
+}
+
+.bubble:nth-child(5){
+  left: 42%;
+  animation: bubble 5s linear infinite;
+  animation-delay: 5s;
+}
+
+.bubble:nth-child(6){
+  left: 52%;
+  animation: bubble 5s linear infinite;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(7){
+  left: 62%;
+  animation: bubble 5s linear infinite;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(8){
+  left: 72%;
+  animation: bubble 5s linear infinite;
+  animation-delay: 5s;
+}
+
+.bubble:nth-child(9){
+  left: 82%;
+  animation: bubble 5s linear infinite;
+  animation-delay: 4s;
+}
+
+.bubble:nth-child(10){
+  left: 92%;
+  animation: bubble 5s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes move {
+  0%{
+    transform: rotate(-25deg);
+  }
+  50%{
+    transform: rotate(25deg);
+  }
+  100%{
+    transform: rotate(-25deg);
+  }
+}
+
+@keyframes move2 {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(80px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes bubble {
+  0%{
+    bottom: 0;
+    opacity: 0;
+  }
+  50%{
+    opacity: .4;
+  }
+  100%{
+    bottom:100vh;
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:380px){
+
+  .container{
+    padding: 0 2rem;
+    display: flex; 
+    align-items: center;
+  }
+
+  .container__text{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+    order: 2;
+  }
+
+  .container__sgv svg{
+    max-width: 90%;
+    order: 1;
+  }
+
+}
