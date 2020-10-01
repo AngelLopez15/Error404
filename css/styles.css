@@ -38,7 +38,26 @@ body{
 .container__sgv{
   /* animation: move 3s infinite; */
   animation: move2 3s linear infinite;
-  
+}
+
+.container_btn{
+  background: none;
+  color: #aaa;
+  cursor: pointer;
+  padding: .5rem 3rem;
+  border-radius: 30px;
+  text-align: center;
+  outline: none;
+  border: solid 1px #aaa;
+  font-family: 'Architects Daughter', cursive;
+  box-shadow: 0 0 5px 3px;
+}
+
+.container_btn:hover{
+  background-color: #aaa;
+  color:#09414e;
+  transition: color 1s;
+  transition: background-color 1s;
 }
 
 .bubble{
