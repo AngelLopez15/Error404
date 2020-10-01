@@ -17,10 +17,12 @@ body{
 .container__text{
   text-align: center;
   font-size: 2rem;
+  /* background-color: blue; */
   /* padding: 3rem 0 ; */
 }
 
 .container__title{
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -28,6 +30,7 @@ body{
   font-size: 2rem;
   line-height: 3rem;
   margin: 0;
+  margin-bottom: 1rem;
 }
 
 .container__sgv svg{
@@ -37,6 +40,7 @@ body{
 
 .container__sgv{
   /* animation: move 3s infinite; */
+  /* background-color: red; */
   animation: move2 3s linear infinite;
 }
 
@@ -50,6 +54,7 @@ body{
   outline: none;
   border: solid 1px #aaa;
   font-family: 'Architects Daughter', cursive;
+  font-size: 1.5rem;
   box-shadow: 0 0 5px 3px;
 }
 
